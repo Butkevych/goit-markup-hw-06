@@ -601,7 +601,7 @@ header {
   display: flex;
   flex-direction: column;
   top: 50%;
-  left: 10%;
+  left: 20%;
 
   transform: translate(-50%, -50%);
 
@@ -624,9 +624,7 @@ header {
 .btn-menu-close svg {
   fill: #2e2f42;
 }
-.nav-mobile-list:not(:last-child) {
-  margin-bottom: 40px;
-}
+
 .nav-mobile-link {
   display: block;
   font-weight: 700;
@@ -634,13 +632,16 @@ header {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   color: inherit;
+  margin-bottom: 40px;
 }
+
 .nav-mobile-link:hover {
   color: #404bbf;
 }
 .address-menu-link {
   display: block;
   font-weight: 500;
+  font-style: normal;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -649,6 +650,10 @@ header {
 }
 .address-menu-link:hover {
   color: #4d5ae5;
+}
+.address-menu {
+  display: block;
+  margin-top: 168px;
 }
 .menu-media {
   display: flex;
