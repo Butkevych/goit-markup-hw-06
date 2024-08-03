@@ -174,13 +174,25 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mobile-bg-1x.jpg);
   background-color: #2e2f42;
   max-width: 320px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192pdi),
+  (min-resolution: 2dppx) {
+  .headline-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-bg-2x.jpg);
+  }
 }
 .headline-title {
   color: #ffffff;
@@ -224,6 +236,12 @@ header {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-bg-1x.jpg);
   }
   .headline-title {
     font-size: 56px;
@@ -233,14 +251,44 @@ header {
     margin-bottom: 36px;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192pdi),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .headline-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-bg-2x.jpg);
+  }
+}
 @media screen and (min-width: 1158px) {
   .headline-section {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-bg-1x.jpg);
   }
   .headline-title {
     margin-bottom: 48px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192pdi),
+  (min-resolution: 2dppx) and (min-width: 1158px) {
+  .headline-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-bg-2x.jpg);
   }
 }
 .visually-hidden {
