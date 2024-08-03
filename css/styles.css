@@ -624,7 +624,11 @@ header {
 .btn-menu-close svg {
   fill: #2e2f42;
 }
-
+.nav-mobile {
+  display: block;
+  min-height: 100%;
+  margin-bottom: -168px;
+}
 .nav-mobile-link {
   display: block;
   font-weight: 700;
@@ -656,7 +660,6 @@ header {
 }
 .address-menu {
   display: block;
-  margin-top: 168px;
 }
 .menu-media {
   display: flex;
