@@ -49,6 +49,8 @@ button {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 header {
@@ -60,7 +62,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 0 16px;
 }
 .logo,
 .footer-logo {
@@ -78,6 +80,8 @@ header {
 }
 .header-logo {
   margin-right: 76px;
+  padding: 16px 0;
+  display: block;
 }
 .nav-list,
 .address-list {
@@ -94,7 +98,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .header-container {
-    padding: 24px;
+    padding: 0 24px;
   }
   .menu-btn {
     display: none;
@@ -128,8 +132,11 @@ header {
   }
 
   .address-link {
-    color: inherit;
-
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -158,12 +165,22 @@ header {
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    padding: 16px 0;
+  }
+  .header-logo {
+    padding: 24px 0;
   }
 }
 @media screen and (min-width: 1158px) {
   .address-list {
     flex-direction: row;
     gap: 40px;
+    padding: 24px 0;
+  }
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 .headline-section {
@@ -333,7 +350,8 @@ header {
 @media screen and (min-width: 768px) {
   .qualities-list {
     flex-direction: row;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
     margin: 0 auto;
     flex-wrap: wrap;
   }
@@ -396,6 +414,7 @@ header {
   flex-direction: column;
   gap: 72px;
   justify-content: center;
+  align-items: center;
 }
 .team-card {
   background-color: #ffffff;
@@ -451,7 +470,8 @@ header {
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
   }
   .team-card {
     width: calc((100% - 1 * 24px) / 2);
@@ -599,7 +619,7 @@ header {
 .email-form {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -646,7 +666,7 @@ header {
     row-gap: 72px;
     justify-content: left;
     flex-wrap: wrap;
-    margin-left: 108px;
+    padding-left: 108px;
   }
   .footer-logo,
   .footer-s-m .footer-text {
@@ -660,6 +680,10 @@ header {
     align-items: center;
     gap: 16px;
   }
+  .email-form {
+    width: 264px;
+    margin-right: 24px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .footer-container {
@@ -667,6 +691,13 @@ header {
     align-items: baseline;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-left: 15px;
+  }
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+  .footer-s-m {
+    margin-right: auto;
   }
 }
 .mobile-menu {
@@ -752,7 +783,9 @@ header {
 .nav-mobile-item:not(:last-child) {
   margin-bottom: 40px;
 }
-.nav-mobile-link:hover {
+.nav-mobile-link:hover,
+.nav-mobile-link:focus,
+.current-link {
   color: #404bbf;
 }
 .address-menu-link {
@@ -767,7 +800,9 @@ header {
 .address-menu-item:not(:last-child) {
   margin-bottom: 24px;
 }
-.address-menu-link:hover {
+.address-menu-link:hover,
+.address-menu-link:focus,
+.menu-phone {
   color: #4d5ae5;
 }
 .address-menu {
@@ -997,8 +1032,9 @@ header {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
-.form-input-check:checked + label > span {
+.form-input-check:checked + label > .check {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
